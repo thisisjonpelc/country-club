@@ -1,0 +1,14 @@
+.quick-link{
+    text-decoration: none;
+    display: block;
+    padding: 20px 27px;
+    text-align: center;
+
+    &__icon{
+        margin-bottom:17px;
+    }
+
+    &:hover{
+        background-color:$mainBlueDark;
+    }
+}
