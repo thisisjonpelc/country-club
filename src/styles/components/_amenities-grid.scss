@@ -1,0 +1,74 @@
+.amenities-grid{
+
+    @include clearfix;
+
+    &__column{
+        float:left;
+        height:585px;
+        width:28.3%;
+
+        &--large{
+            width:43.4%;
+        }
+    }
+
+    &__block{
+        height:50%;
+        width:100%;
+        background-position: center;
+        background-size:cover;
+        position:relative;
+
+        &--large{
+            height:100%;
+            background-image: url('/images/golf.png');
+        }
+
+        &--fitness{
+            background-image: url('/images/fitness.png');
+        }
+
+        &--pool{
+            background-image: url('/images/pool.png');
+        }
+
+        &--tennis{
+            background-image: url('/images/tennis.png');
+        }
+
+        &--events{
+            background-image: url('/images/special_events.png');
+        }
+    }
+
+    &__link{
+        display:block;
+        height:100%;
+        width:100%;
+        background-color:rgba($amenityBackground, .4);
+        transition: background-color .3s ease-out;
+
+        &:hover{
+            background-color:transparent;
+        
+            & span{
+                background-color:$mainBlueDark;
+            }
+        }
+    }
+
+    &__text{
+        color:$amenityTextColor;
+        text-transform: uppercase;
+        font-family:'Playfair Display SC', serif;
+        font-weight:900;
+        font-size:2.2rem;
+        padding:15px;
+        @include absoluteCenter;
+        border:1px solid $amenityTextColor;
+        transition: background-color .3s ease-out;
+        text-align:center;
+        display:inline-block;
+        max-width:75%;
+    }
+}
