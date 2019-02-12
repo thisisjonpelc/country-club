@@ -1,0 +1,19 @@
+.line-break{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    &__lines{
+        display:block;
+        width:30%;
+        border-top:1px solid $beige;
+        border-bottom:1px solid $beige;
+        height:5px;
+    }
+
+    &__icon{
+        margin: 0 18px;
+    }
+
+}

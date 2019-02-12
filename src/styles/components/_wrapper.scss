@@ -3,5 +3,9 @@
     margin:0 auto;
     position:relative;
 
+    &--extra-right-padding{
+        padding-right:300px;
+    }
+
     @include clearfix;
 }

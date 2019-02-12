@@ -1,0 +1,35 @@
+.blurb{
+    padding-top:70px;
+    padding-bottom:70px;
+    background-image: url('/images/home-text-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+
+    &__heading{
+        color:$mainBlueDark;
+        font-size:5rem;
+        font-family: 'EB Garamond', serif;
+        font-style:italic;
+        margin-top:0px;
+        margin-bottom:18px;
+    }
+
+    &__text{
+        margin-top:24px;
+        font-size:1.5rem;
+        font-family:'Merriweather', 'serif';
+        line-height:1.6;
+        color:$defaultTextColor;
+    }
+
+    &__golf-course{
+        position:absolute;
+        bottom:-45px;
+        right:0;
+
+        & img{
+            display:block;
+        }
+    }
+}
