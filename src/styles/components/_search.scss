@@ -1,0 +1,42 @@
+.search{
+
+    height:74px;
+    display:flex;
+
+    &--pull-right{
+        float:right;
+    }
+
+    &__toggle{
+        height:100%;
+        width:74px;
+        background-color:$mainBlueDark;
+        cursor: pointer;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__form{
+        display:inline-block;
+        background-color:$mainBlueDark;
+        padding-left:20px;
+        display:flex;
+        align-items: center;
+        display:none;
+    }
+
+    &__input{
+        width:381px;
+        height:46px;
+        border:none;
+        outline:none;
+        font-family: 'Open Sans', sans-serif;
+        font-size:1.6rem;
+        font-weight: 600;
+        color:$mainBlueDark;
+        padding-left:24px;
+    }
+
+
+}
