@@ -1,7 +1,7 @@
-@import './abstracts/variables';
+@import './abstracts/_variables';
 
-.app{
-    background-color:$mainBlueDark;
-    padding:10px;
-    height:50px;
-}
+@import './base/_base';
+@import './base/_typography';
+
+@import './components/menu-button';
+@import './components/_menu-icon';

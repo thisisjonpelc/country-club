@@ -21,12 +21,13 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback:'style-loader',
                     use:['css-loader', 'sass-loader'],
+                    publicPath: path.resolve(__dirname, './public/dist')
                 })
             }
         ]
     },
     plugins:[
-        new ExtractTextPlugin({filename:'styles.css'})
+        new ExtractTextPlugin('styles.css')
     ],
     devServer: {
         contentBase: path.join(__dirname, "public"),

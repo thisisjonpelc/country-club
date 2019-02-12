@@ -1,0 +1,14 @@
+.menu-icon{
+    display:inline-block;
+
+    &__bar{
+        width:48px;
+        height:6px;
+        background-color:$offWhite;
+    
+        &--center{
+            margin-top:11px;
+            margin-bottom:10px;
+        }
+    }
+}
