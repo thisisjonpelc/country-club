@@ -1,0 +1,26 @@
+.membership-block{
+    background-image: url('/images/membership_texture.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+
+    &__question{
+        font-size:3.5rem;
+        font-style:italic;
+        color:$mainBlueDark;
+        font-family: 'EB Garamond', serif;
+        font-weight:500;
+        margin-bottom:24px;
+    }
+
+    &__button{
+        display:inline-block;
+        text-decoration: none;
+        border-radius:5px;
+        font-family: 'EB Garamond', serif;
+
+        &:visited{
+            color:$offWhite;
+        }
+    }
+}

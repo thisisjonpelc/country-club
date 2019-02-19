@@ -1,0 +1,10 @@
+.btn{
+
+    padding:20px 30px;
+    background-color:$mainBlue;
+    font-size:2.6rem;
+
+    &:hover{
+        background-color:$mainBlueDark;
+    }
+}
