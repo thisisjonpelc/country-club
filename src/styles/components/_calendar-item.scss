@@ -1,0 +1,92 @@
+.calendar-item{
+    height:137px;
+    width:32%;
+
+    &:last-child{
+        margin-right:0%;
+    }
+
+    &__date{
+        color:#fff;
+        background-color:$mainBlueDark;
+        padding:0 25px;
+        width:19%;
+        display:inline-block;
+        display:flex;
+        float:left;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__month{
+        display:block;
+        font-size:1.6rem;
+        font-family:'Merriweather', serif;
+        font-weight:700;
+        text-align: center;
+    }   
+
+    &__day{
+        display:block;
+        font-size:3.5rem;
+        font-family:'Merriweather', serif;
+        font-weight:700;
+        font-style:italic;
+        text-align: center;
+    }
+
+    &__description{
+        float:left;
+        width:81%;
+        border:1px solid $newsBorderColor;
+        border-left:none;
+        height:100%;
+        background-color:#fff;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        position:relative;
+    }
+
+    &__description-text{
+        font-size:18px;
+        font-family:'Merriweather', serif;
+        text-align:center;
+        font-weight:normal; 
+    }
+
+    &__overlay{
+        position: absolute;
+        top:-1px;
+        bottom:-1px;
+        left:0px;
+        right:-1px;
+        background-color:$mainBlueDark;
+        font-family:'Merriweather', serif;
+        font-size:1.8rem;
+        font-weight:400;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding:0 10px;
+        opacity:0;
+        transition:opacity .3s ease-out;
+
+        &:hover{
+            opacity:1;
+        }
+    }
+
+    &__overlay-heading{
+        font-weight:normal;
+        color:#fff;
+    }
+
+    &__overlay-description{
+        color:$newsBorderColor;
+        margin:7px 0;
+    }
+}
