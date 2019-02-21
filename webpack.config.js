@@ -6,7 +6,7 @@ module.exports = {
         bundle: './src/app.js',
     },
     output: {
-        path: path.resolve(__dirname, './public/dist/scripts'),
+        path: path.resolve(__dirname, './dist/scripts'),
         filename:'[name].js'
     },
     module:{
@@ -21,16 +21,27 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback:'style-loader',
                     use:['css-loader', 'sass-loader'],
-                    publicPath: path.resolve(__dirname, './public/dist')
+                    publicPath: path.resolve(__dirname, './dist/')
                 })
+            },
+            {
+                test:/\.(png|jpg|gif)$/,
+                use:[
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins:[
-        new ExtractTextPlugin('styles.css')
+        new ExtractTextPlugin('./../styles/styles.css')
     ],
     devServer: {
-        contentBase: path.join(__dirname, "public"),
+        contentBase: path.join(__dirname, "dist"),
         historyApiFallback: true,
         publicPath: "/dist/"
     }
