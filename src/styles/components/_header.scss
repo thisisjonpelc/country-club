@@ -6,32 +6,17 @@
     position:relative;
     z-index:1;
 
+    @include bottomFrills;
+
     &::after{
-        content:'';
-        width:100%;
-        height:7px;
-        background-image:url('/images/frills.png');
-        background-repeat:repeat-x;
-        display:block;
-        position:absolute;
-        top:74px;
-        z-index:-1;
+        z-index: -1;
     }
 
     &__logo{
         display:inline-block;
         position:absolute;
 
-        &::after{
-            content:'';
-            width:100%;
-            height:7px;
-            background-image:url('/images/logo-bottom.png');
-            background-repeat:repeat-x;
-            display:block;
-            position:absolute;
-        }
-        
+        @include bottomFrills;
     }
 
     &__image{

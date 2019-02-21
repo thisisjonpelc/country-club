@@ -1,0 +1,58 @@
+.footer{
+    background-image: url('/images/footer-texture.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top;
+    padding-top:20px;
+    padding-bottom:150px;
+    background
+
+    &__content{
+        @include clearfix;
+    }
+
+    &__member-link{
+        display:block;
+        text-transform: uppercase;
+        font-family:'Playfair Display SC', serif;
+        position: absolute;
+        top:-20px;
+        right:0px;
+        display:block;
+        background-color:$mainBlue;
+        color:$footerMemberColor;
+        font-size:1.3rem;
+        text-decoration: none;
+        padding:18px 16px;
+
+        @include bottomFrills;
+
+        &::after{
+            background-image: url('/images/frills-clean.png');
+        }
+    }
+
+    &__pga-logo{
+        //float:left;
+        position: absolute;
+    }
+
+    &__social-links{
+        //float:left;
+        position:absolute;
+        left:189px;
+        top:22px;
+        
+        color:$footerTextColor;
+
+        & i:hover{
+            color:$mainBlueDark;
+        }
+    }
+
+    &__contact-info{
+        color:$footerTextColor;
+    }
+
+
+}
