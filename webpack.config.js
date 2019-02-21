@@ -25,11 +25,12 @@ module.exports = {
                 })
             },
             {
-                test:/\.(png|jpg|gif)$/,
+                test:/\.(png|jpg|gif)$/i,
                 use:[
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
+                            limit: 8192,
                             name: '[path][name].[ext]'
                         }
                     }
