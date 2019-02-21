@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -20,30 +21,31 @@ module.exports = {
                 test:/\.s?css$/,
                 use: ExtractTextPlugin.extract({
                     fallback:'style-loader',
-                    use:['css-loader', 'sass-loader'],
-                    publicPath: path.resolve(__dirname, './dist/')
+                    use:['css-loader', 'sass-loader']
                 })
             },
             {
-                test:/\.(png|jpg|gif)$/i,
-                use:[
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 8192,
-                            name: '[path][name].[ext]'
-                        }
+                test: /\.png$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '../images/[name].[ext]'
                     }
+                  }
                 ]
-            }
+              }
         ]
     },
     plugins:[
-        new ExtractTextPlugin('./../styles/styles.css')
+        new ExtractTextPlugin('../styles/styles.css'),
+        new CopyPlugin([
+            {from: 'src/images', to: '../images'}
+        ])
     ],
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: path.join(__dirname, "public"),
         historyApiFallback: true,
-        publicPath: "/dist/"
+        publicPath: "./dist"
     }
 };

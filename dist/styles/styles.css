@@ -382,7 +382,7 @@ font-family: 'Open Sans', sans-serif;*/
 .header {
   width: 100%;
   height: 74px;
-  background-image: url("/images/header_bg.png");
+  background-image: url(../images/header_bg.png);
   background-repeat: repeat-x;
   position: relative;
   z-index: 1; }
@@ -390,7 +390,7 @@ font-family: 'Open Sans', sans-serif;*/
     content: '';
     width: 100%;
     height: 7px;
-    background-image: url("/images/frills.png");
+    background-image: url(../images/frills.png);
     background-repeat: repeat-x;
     display: block;
     position: absolute;
@@ -405,7 +405,7 @@ font-family: 'Open Sans', sans-serif;*/
       content: '';
       width: 100%;
       height: 7px;
-      background-image: url("/images/frills.png");
+      background-image: url(../images/frills.png);
       background-repeat: repeat-x;
       display: block;
       position: absolute;
@@ -474,7 +474,7 @@ font-family: 'Open Sans', sans-serif;*/
 .blurb {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-image: url("/images/home-text-bg.png");
+  background-image: url(../images/home-text-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center; }
@@ -531,15 +531,15 @@ font-family: 'Open Sans', sans-serif;*/
   position: relative; }
   .amenities-grid__block--large {
     height: 100%;
-    background-image: url("/images/golf.png"); }
+    background-image: url(../images/golf.png); }
   .amenities-grid__block--fitness {
-    background-image: url("/images/fitness.png"); }
+    background-image: url(../images/fitness.png); }
   .amenities-grid__block--pool {
-    background-image: url("/images/pool.png"); }
+    background-image: url(../images/pool.png); }
   .amenities-grid__block--tennis {
-    background-image: url("/images/tennis.png"); }
+    background-image: url(../images/tennis.png); }
   .amenities-grid__block--events {
-    background-image: url("/images/special_events.png"); }
+    background-image: url(../images/special_events.png); }
 
 .amenities-grid__link {
   display: block;
@@ -579,7 +579,7 @@ font-family: 'Open Sans', sans-serif;*/
   width: 33.3%; }
 
 .membership-block {
-  background-image: url("/../images/membership_texture.png");
+  background-image: url(../images/membership_texture.png);
   background-size: cover;
   background-position: center;
   padding: 40px 0; }
@@ -606,7 +606,7 @@ font-family: 'Open Sans', sans-serif;*/
     background-color: #013044; }
 
 .club-news {
-  background-image: url("/images/news-bg.png");
+  background-image: url(../images/news-bg.png);
   background-position: center;
   background-size: cover;
   padding: 100px 0 150px 0;
@@ -615,7 +615,7 @@ font-family: 'Open Sans', sans-serif;*/
     content: '';
     width: 100%;
     height: 7px;
-    background-image: url("/images/frills.png");
+    background-image: url(../images/frills.png);
     background-repeat: repeat-x;
     display: block;
     position: absolute;
@@ -829,7 +829,7 @@ font-family: 'Open Sans', sans-serif;*/
     color: #fff; }
 
 .footer {
-  background-image: url("/images/footer-texture.png");
+  background-image: url(../images/footer-texture.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -857,14 +857,14 @@ font-family: 'Open Sans', sans-serif;*/
       content: '';
       width: 100%;
       height: 7px;
-      background-image: url("/images/frills.png");
+      background-image: url(../images/frills.png);
       background-repeat: repeat-x;
       display: block;
       position: absolute;
       bottom: -7px;
       left: 0px; }
     .footer__member-link::after {
-      background-image: url("/images/frills-clean.png"); }
+      background-image: url(../images/frills-clean.png); }
   .footer__pga-logo {
     position: absolute; }
   .footer__social-links {
@@ -893,7 +893,8 @@ font-family: 'Open Sans', sans-serif;*/
 .social-links {
   font-size: 2.5rem; }
   .social-links a {
-    margin-right: 27px; }
+    margin-right: 27px;
+    color: inherit; }
     .social-links a:last-of-type {
       margin-right: 0; }
   .social-links a:visited {

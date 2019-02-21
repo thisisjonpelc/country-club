@@ -1,5 +1,5 @@
 .footer{
-    background-image: url('/images/footer-texture.png');
+    background-image: url('../images/footer-texture.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position: top;
@@ -28,7 +28,7 @@
         @include bottomFrills;
 
         &::after{
-            background-image: url('/images/frills-clean.png');
+            background-image: url('../images/frills-clean.png');
         }
     }
 
