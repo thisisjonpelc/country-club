@@ -7,8 +7,9 @@ module.exports = {
         bundle: './src/app.js',
     },
     output: {
-        path: path.resolve(__dirname, './dist/scripts'),
-        filename:'[name].js'
+        path: path.resolve(__dirname, './dist'),
+        filename:'./scripts/[name].js',
+        publicPath:'/'
     },
     module:{
         rules:[
@@ -30,7 +31,8 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options: {
-                      name: '../images/[name].[ext]'
+                      name: '[name].[ext]',
+                      outputPath: './images'
                     }
                   }
                 ]
@@ -38,14 +40,12 @@ module.exports = {
         ]
     },
     plugins:[
-        new ExtractTextPlugin('../styles/styles.css'),
+        new ExtractTextPlugin('./styles/styles.css'),
         new CopyPlugin([
-            {from: 'src/images', to: '../images'}
+            {from: 'src/images', to: './images'}
         ])
     ],
     devServer: {
-        contentBase: path.join(__dirname, "public"),
-        historyApiFallback: true,
-        publicPath: "./dist"
+        contentBase: path.join(__dirname, './dist')
     }
 };
