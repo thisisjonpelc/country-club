@@ -20,10 +20,17 @@
     &__form{
         display:inline-block;
         background-color:$mainBlueDark;
-        padding-left:20px;
-        display:flex;
+        padding:15px 0px 15px 20px;
         align-items: center;
-        display:none;
+        //display:none;
+        visibility: hidden;
+        //opacity:0;
+        //transition: visibility 0s, opacity .3s ease-out;
+
+        &--visible{
+            visibility:visible;
+            //opacity:1;
+        }
     }
 
     &__input{

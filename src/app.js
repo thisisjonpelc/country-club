@@ -1,4 +1,8 @@
 import "normalize.css/normalize.css";
 import './styles/main.scss';
 
-console.log('Hello World!');
+import SearchBar from './modules/SearchBar';
+import SideMenu from './modules/SideMenu';
+
+const searchBar = new SearchBar();
+const sideMenu = new SideMenu();

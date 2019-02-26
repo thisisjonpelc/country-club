@@ -1,0 +1,104 @@
+.nav-menu{
+    position: absolute;
+    width:462px;
+    height:100vh;
+    background-color:$mainBlueDark;
+    padding-top:149px;
+    top:0px;
+    left:-462px;
+    transition: left .3s ease-out;
+
+    &--visible{
+        left:0px;
+    }
+
+    &__scroll-wrapper{
+        height:100%;
+        overflow:auto;
+    }
+    
+    &__category-list{
+        list-style:none;
+    }
+
+    &__category{
+        border-top:1px solid rgba(#fff, .25);
+        //padding:20px 0px 20px 54px;
+        font-family:'Merriweather', serif;
+        font-size:1.9rem;
+        color:#fff;
+
+        &:hover{
+            background-color:$mainBlue;
+
+            & .nav-menu__category-arrow{
+                opacity:1;
+            }
+        }
+
+        &--open{
+
+            background-color:$mainBlue;
+            
+            & .nav-menu__inner-list{
+                display:block;
+                max-height:500px;
+                transition: max-height .8s ease-out;
+            }
+
+            & .nav-menu__category-arrow{
+                opacity:1;
+                transform:rotate(180deg);
+            }
+        }
+    }
+
+    &__category-label{
+        padding:20px 0 20px 54px;
+        cursor:pointer;
+        position:relative;
+        display:flex;
+        align-items:center;
+    }
+
+    &__category-arrow{
+        margin-right:57px;
+        margin-left:auto;
+        opacity:.5;
+        transition:transform .3s ease-out;
+    }
+
+    &__inner-list{
+        list-style:none;
+        //margin-left:-54px;
+        //margin-top:20px;
+        color:$offWhite;
+        padding-left:74px;
+        transition: max-height .3s ease-out;
+        max-height:0;
+        overflow:hidden;
+    }
+
+    &__inner-link{
+        margin-bottom:20px;
+
+        &:last-of-type{
+            margin-bottom:0;
+            padding-bottom:20px;
+        }
+
+        & a{
+            text-decoration:none;
+            font-family:'Open Sans', sans-serif;
+            font-size:1.9rem;
+
+            &:visited{
+                color:inherit;
+            }
+
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+}

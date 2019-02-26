@@ -7,8 +7,35 @@
         background-color:$offWhite;
     
         &--center{
-            margin-top:11px;
+            margin-top:10px;
             margin-bottom:10px;
         }
+
+        transition: all .3s ease-out;
+    }
+
+    &--close{
+
+        .menu-icon__bar{
+
+            &--top{
+                transform-origin: center;
+                transform: translateY(16px);
+                transform: translateY(16px) rotate(45deg);
+            }
+
+            &--center{
+                opacity:0;
+                transform: scaleX(0);
+            }
+
+            &--bottom{
+                transform-origin: center;
+                transform: translateY(-16px);
+                transform: translateY(-16px) rotate(-45deg);
+            }
+
+        }
+
     }
 }

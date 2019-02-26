@@ -4,6 +4,8 @@
     padding-top:45px;
     text-align:center;
     cursor:pointer;
+    position:relative;
+    z-index:1;
 
     &__text{
         margin-top:20px;
