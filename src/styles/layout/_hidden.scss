@@ -1,0 +1,15 @@
+.hidden{
+    display:none;
+
+    &--show-medium{
+        @include responsive(medium){
+            display:block;
+        }
+    }
+
+    &--show-x-large{
+        @include responsive(x-large){
+            display:block;
+        }
+    }
+}

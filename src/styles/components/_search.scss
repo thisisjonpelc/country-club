@@ -1,7 +1,14 @@
 .search{
-
+    width:100%;
     height:74px;
     display:flex;
+    padding-left:72px;
+    position:relative;
+
+    @include responsive(large){
+        width:475px;
+        padding-left:0;
+    }
 
     &--pull-right{
         float:right;
@@ -26,6 +33,7 @@
         visibility: hidden;
         //opacity:0;
         //transition: visibility 0s, opacity .3s ease-out;
+        flex-grow:1;
 
         &--visible{
             visibility:visible;
@@ -34,7 +42,7 @@
     }
 
     &__input{
-        width:381px;
+        width:100%;
         height:46px;
         border:none;
         outline:none;

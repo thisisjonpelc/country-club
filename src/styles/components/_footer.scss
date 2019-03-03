@@ -3,27 +3,37 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position: top;
-    padding-top:20px;
     padding-bottom:150px;
-    background
+
+    @include responsive(medium){
+        padding-top:20px;
+    }
 
     &__content{
         @include clearfix;
+
+        text-align:center;
     }
 
     &__member-link{
+        position: relative;
+
+
         display:block;
         text-transform: uppercase;
         font-family:'Playfair Display SC', serif;
-        position: absolute;
-        top:-20px;
-        right:0px;
         display:block;
         background-color:$mainBlue;
         color:$footerMemberColor;
         font-size:1.3rem;
         text-decoration: none;
         padding:18px 16px;
+
+        @include responsive(medium){
+            position:absolute;
+            top:-20px;
+            right:0px;
+        }
 
         @include bottomFrills;
 
@@ -34,16 +44,41 @@
 
     &__pga-logo{
         //float:left;
-        position: absolute;
+        position: static;
+        display:block;
+        margin:0 auto;
+        margin-top:20px;
+        
+
+        @include responsive(medium){
+            position: absolute;
+            margin-top:0;
+        }
     }
 
     &__social-links{
         //float:left;
-        position:absolute;
-        left:189px;
-        top:22px;
-        
+
+        position:static;
+        display:block;
         color:$footerTextColor;
+        margin:20px auto;
+
+        @include responsive(medium){
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top:0px;
+            margin:0;
+        }
+
+        @include responsive(x-large){
+            position:absolute;
+            top:22px;
+            left:189px;
+            transform:translateX(0);
+        }
+
 
         & i:hover{
             color:$mainBlueDark;
@@ -52,6 +87,14 @@
 
     &__contact-info{
         color:$footerTextColor;
+
+        @include responsive(medium){
+            padding-top:30px;
+        }
+
+        @include responsive(x-large){
+            padding-top:0;
+        }
     }
 
 

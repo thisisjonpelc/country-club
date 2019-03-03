@@ -2,13 +2,22 @@
     display:inline-block;
 
     &__bar{
-        width:48px;
-        height:6px;
+        height:3px;
+        width:24px;
         background-color:$offWhite;
     
+        @include responsive(large){
+            width:48px;
+            height:6px;
+        }
+
         &--center{
-            margin-top:10px;
-            margin-bottom:10px;
+            margin-top:5px;
+            margin-bottom:5px;
+
+            @include responsive(large){
+                margin: 10px auto;
+            }
         }
 
         transition: all .3s ease-out;
@@ -20,8 +29,14 @@
 
             &--top{
                 transform-origin: center;
-                transform: translateY(16px);
-                transform: translateY(16px) rotate(45deg);
+                transform: translateY(8px);
+                transform: translateY(8px) rotate(45deg);
+
+                @include responsive(large){
+                    transform-origin: center;
+                    transform: translateY(16px);
+                    transform: translateY(16px) rotate(45deg);
+                }
             }
 
             &--center{
@@ -31,8 +46,14 @@
 
             &--bottom{
                 transform-origin: center;
-                transform: translateY(-16px);
-                transform: translateY(-16px) rotate(-45deg);
+                transform: translateY(-8px);
+                transform: translateY(-8px) rotate(-45deg);
+            
+                @include responsive(large){
+                    transform-origin: center;
+                    transform: translateY(-16px);
+                    transform: translateY(-16px) rotate(-45deg);
+                }
             }
 
         }

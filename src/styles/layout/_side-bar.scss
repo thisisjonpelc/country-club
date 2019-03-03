@@ -4,5 +4,11 @@
     position:fixed;
     top:0;
     bottom:0;
-    z-index:2;
+    z-index:1;
+    padding-top:149px;
+    display:none;
+
+    @include responsive(large){
+        display:block;
+    }
 }

@@ -4,24 +4,43 @@
     background-image: url('../images/header_bg.png');
     //background-color:orangered;
     background-repeat: repeat-x;
-    position:relative;
+    position:fixed;
     z-index:1;
 
     @include bottomFrills;
+
+    @include responsive(large){
+        position:relative;
+    }
+
 
     &::after{
         z-index: -1;
     }
 
     &__logo{
-        display:inline-block;
         position:absolute;
-
-        @include bottomFrills;
+        height:74px;
+        left:50%;
+        transform:translateX(-50%);
+        
+        @include responsive(large){
+            display:inline-block;
+            position:absolute;
+            @include bottomFrills;
+            height:auto;
+            transform:translateX(0);
+            left:auto;
+        }
     }
 
     &__image{
         display:block;
+        height:74px;
+
+        @include responsive(large){
+            height:305px;
+        }
     }
 
     &__text{
@@ -36,5 +55,11 @@
         transform: translateY(-50%);
         right:110px;
         z-index:-1;
+
+        display:none;
+
+        @include responsive(large){
+            display:block;
+        }
     }
 }

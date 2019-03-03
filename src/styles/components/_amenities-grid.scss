@@ -5,10 +5,28 @@
     &__column{
         float:left;
         height:585px;
-        width:28.3%;
+        width:100%;
+
+        @include responsive(medium){
+            width:50%;
+        }
+
+        @include responsive(large){
+            width:28.3%;
+        }
 
         &--large{
-            width:43.4%;
+
+            height:292.5px;
+
+            @include responsive(medium){
+                width:100%;
+            }
+
+            @include responsive(large){
+                height:585px;
+                width:43.4%;                
+            }
         }
     }
 

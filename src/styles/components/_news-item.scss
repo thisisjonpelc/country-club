@@ -2,9 +2,45 @@
     border:1px solid $newsBorderColor;
     padding:9px 9px 26px 9px;
     background-color:#fff;
-    width:32%;
+    width:75%;
     display:inline-block;
     position:relative;
+
+    @include responsive(small){
+        width:60%;
+    }
+
+    @include responsive(medium){
+        width:42%;
+    }
+
+    @include responsive(x-large){
+        width:32%;
+    }
+
+    &--show-medium{
+        display:none;
+        
+        @include responsive(medium){
+            display:inline-block;
+        }
+    }
+
+    &--show-large{
+        display:none;
+        
+        @include responsive(large){
+            display:inline-block;
+        }
+    }
+
+    &--show-x-large{
+        display:none;
+
+        @include responsive(x-large){
+            display:inline-block;
+        }
+    }
 
     &:last-child{
         margin-right:0%;
@@ -27,7 +63,7 @@
     }
 
     &__blurb{
-        font-size:18px;
+        font-size:1.8rem;
         font-family:'Merriweather', serif;
         text-align:center;
     }
@@ -45,8 +81,9 @@
         flex-direction:column;
         align-items: center;
         justify-content: center;
-        padding:0 50px;
+        padding:0 5%;
         transition:opacity .3s ease-out;
+        overflow:hidden;
 
         &:hover{
             opacity:1;
@@ -54,11 +91,15 @@
     }
 
     &__overlay-heading{
-        font-size:2.2rem;
+        font-size:1.8rem;
         text-align:center;
         font-family:'Merriweather', serif;
         color:#fff;
         font-weight:400;
+
+        @include responsive(medium){
+            font-size:2.2rem;
+        }
     }
 
     &__overlay-blurb{
@@ -66,7 +107,7 @@
         text-align:center;
         font-family:'Merriweather', serif;
         color:#fff;
-        margin:40px 0;
+        margin:20px 0;
         line-height:1.6;
         
     }

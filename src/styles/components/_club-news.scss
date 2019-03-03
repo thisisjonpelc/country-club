@@ -54,12 +54,12 @@
         display:flex;
         margin-bottom:90px;
         position: relative;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     &__calendar-events{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         position: relative;
     }
 

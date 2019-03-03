@@ -1,6 +1,18 @@
 .calendar-item{
     height:137px;
-    width:32%;
+    width:75%;
+
+    @include responsive(small){
+        width:60%;
+    }
+
+    @include responsive(medium){
+        width:42%;
+    }
+
+    @include responsive(x-large){
+        width:32%;
+    }
 
     &:last-child{
         margin-right:0%;
@@ -9,7 +21,6 @@
     &__date{
         color:#fff;
         background-color:$mainBlueDark;
-        padding:0 25px;
         width:19%;
         display:inline-block;
         display:flex;
@@ -50,7 +61,7 @@
     }
 
     &__description-text{
-        font-size:18px;
+        font-size:1.8rem;
         font-family:'Merriweather', serif;
         text-align:center;
         font-weight:normal; 

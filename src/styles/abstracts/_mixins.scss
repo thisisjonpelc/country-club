@@ -26,3 +26,25 @@
         left:0px;
     }
 }
+
+@mixin responsive($size){
+    @if $size == small{
+        @media only screen and (min-width: 600px) { @content}; 
+    }
+
+    @if $size == medium{
+        @media only screen and (min-width: 900px) { @content};
+    }
+
+    @if $size == large{
+        @media only screen and (min-width: 1200px) { @content};
+    }
+
+    @if $size == x-large{
+        @media only screen and (min-width: 1500px) { @content};
+    }
+
+    @if $size == huge{
+        @media only screen and (min-width: 1800px) { @content};
+    }
+}

@@ -2,6 +2,7 @@
     
     &--flexbox{
         display:flex;
+        flex-wrap: wrap;
     }
 
     &--flexbox-center-align{
@@ -9,6 +10,12 @@
     }
 
     &__4{
-        width:33.3%;
+        width:100%;
+        margin-bottom:20px;
+
+        @include responsive(large){
+            width:33.3%;
+            margin-bottom:0;
+        }
     }
 }
