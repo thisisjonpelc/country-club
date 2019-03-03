@@ -769,7 +769,10 @@ font-family: 'Open Sans', sans-serif;*/
     text-transform: uppercase;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
-    margin-bottom: 35px; }
+    margin-bottom: 10px; }
+    @media only screen and (min-width: 600px) {
+      .club-news__heading-text {
+        margin-bottom: 35px; } }
   .club-news__all-news-link {
     display: flex;
     color: #fff;
@@ -780,9 +783,15 @@ font-family: 'Open Sans', sans-serif;*/
     font-weight: 600;
     text-transform: uppercase;
     align-items: center;
-    position: absolute;
-    right: 0px;
-    top: 8px; }
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 35px; }
+    @media only screen and (min-width: 600px) {
+      .club-news__all-news-link {
+        position: absolute;
+        right: 0px;
+        top: 8px;
+        margin-bottom: 0px; } }
     .club-news__all-news-link img {
       margin-left: 20px; }
     .club-news__all-news-link:hover {
@@ -796,7 +805,7 @@ font-family: 'Open Sans', sans-serif;*/
     justify-content: space-around; }
   .club-news__calendar-events {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative; }
   .club-news__previous {
     position: absolute;
@@ -912,13 +921,21 @@ font-family: 'Open Sans', sans-serif;*/
 
 .calendar-item {
   height: 137px;
-  width: 32%; }
+  width: 75%; }
+  @media only screen and (min-width: 600px) {
+    .calendar-item {
+      width: 60%; } }
+  @media only screen and (min-width: 900px) {
+    .calendar-item {
+      width: 42%; } }
+  @media only screen and (min-width: 1500px) {
+    .calendar-item {
+      width: 32%; } }
   .calendar-item:last-child {
     margin-right: 0%; }
   .calendar-item__date {
     color: #fff;
     background-color: #013044;
-    padding: 0 25px;
     width: 19%;
     display: inline-block;
     display: flex;
@@ -951,7 +968,7 @@ font-family: 'Open Sans', sans-serif;*/
     justify-content: center;
     position: relative; }
   .calendar-item__description-text {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: 'Merriweather', serif;
     text-align: center;
     font-weight: normal; }

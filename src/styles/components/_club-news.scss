@@ -20,7 +20,11 @@
         text-transform: uppercase;
         font-family:'EB Garamond', serif;
         font-weight:500;
-        margin-bottom:35px;
+        margin-bottom:10px;
+
+        @include responsive(small){
+            margin-bottom:35px;
+        }
     }
 
     &__all-news-link{
@@ -33,9 +37,17 @@
         font-weight:600;
         text-transform: uppercase;
         align-items: center;
-        position:absolute;
-        right:0px;
-        top:8px;
+        cursor: pointer;
+
+        justify-content:center;
+        margin-bottom:35px;
+        
+        @include responsive(small){
+            position:absolute;
+            right:0px;
+            top:8px;
+            margin-bottom:0px;
+        }
 
         & img{
             margin-left:20px;
