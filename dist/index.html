@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|EB+Garamond:400,500,600i|Merriweather:400,700|Nanum+Gothic|Open+Sans:400,600|Playfair+Display+SC:900"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+    <script src="scripts/vendor.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Home</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -41,7 +43,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>About</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -53,7 +55,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Membership</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -65,7 +67,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Amenities</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Overview</a></li>
@@ -78,7 +80,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Golf</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -90,7 +92,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Calendar</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -102,7 +104,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>News</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -114,7 +116,7 @@
                 <li class='nav-menu__category'>
                     <div class='nav-menu__category-label'>
                         <p>Contact</p>
-                        <img class='nav-menu__category-arrow' src='images/arrow-down.png'>
+                        <img class='nav-menu__category-arrow lazyload' data-src='images/arrow-down.png'>
                     </div>
                     <ul class='nav-menu__inner-list'>
                         <li class='nav-menu__inner-link'><a href='#'>Example Link 1</a></li>
@@ -131,23 +133,23 @@
 
         <div class='quick-links'>
             <a class='quick-link' href="#">
-                <img class='quick-link__icon' src='images/trees.png'>
+                <img class='quick-link__icon lazyload' data-src='images/trees.png'>
                 <p class='quick-link__text sidebar__text'>Member Login</p>
             </a>
             <a class='quick-link' href="#">
-                <img class='quick-link__icon' src='images/golf-clubs.png'>
+                <img class='quick-link__icon lazyload' data-src='images/golf-clubs.png'>
                 <p class='quick-link__text sidebar__text'>Amenities</p>
             </a>
             <a class='quick-link' href="#">
-                <img class='quick-link__icon' src='images/calendar.png'>
+                <img class='quick-link__icon lazyload' data-src='images/calendar.png'>
                 <p class='quick-link__text sidebar__text'>Calendar</p>
             </a>
             <a class='quick-link' href="#">
-                <img class='quick-link__icon' src='images/news.png'>
+                <img class='quick-link__icon lazyload' data-src='images/news.png'>
                 <p class='quick-link__text sidebar__text'>News</p>
             </a>
             <a class='quick-link' href="#">
-                <img class='quick-link__icon' src='images/chat.png'>
+                <img class='quick-link__icon lazyload' data-src='images/chat.png'>
                 <p class='quick-link__text sidebar__text'>Blog</p>
             </a>
         </div>
@@ -155,10 +157,10 @@
     </div>
 
     <div class='page-content'>
-        <header class='header'>
+        <header class='header lazyload' data-bg='images/header_bg.png'>
             <div class='wrapper wrapper--full-width-medium'>
                 <div class='header__logo'>
-                    <img class='header__image' src='images/banner-logo.png'>
+                    <img class='header__image lazyload' data-src='images/banner-logo.png'>
                 </div>
 
                 <div class='search search--pull-right'>
@@ -166,7 +168,7 @@
                         <input class='search__input' type='text' placeholder='Search...'>
                     </form>
                     <div class='search__toggle'>
-                        <img class='search__icon' src='images/search.png'>
+                        <img class='search__icon lazyload' data-src='images/search.png'>
                     </div>
                 </div>
 
@@ -178,11 +180,11 @@
         <div class='jumbotron'>
 
             <picture>
-                <source srcset='images/golf-big-mobile.png' media='(max-width: 1000px)'>
-                <img class='jumbotron__image' src='images/golf-big.png'>
+                <source data-srcset='images/golf-big-mobile.png' media='(max-width: 1000px)'>
+                <img class='jumbotron__image lazyload' data-src='images/golf-big.png'>
             </picture>
         </div>
-        <div class='blurb'>
+        <div class='blurb lazyload' data-bg='images/home-text-bg.png'>
             <div class='wrapper wrapper--extra-right-padding-large'>
                 <h1 class='blurb__heading'>Spend some time with your extended family</h1>
                 <div class='line-break'>
@@ -200,14 +202,14 @@
                 </p>
                 <div class='blurb__golf-course'>
                     <a href="#">
-                        <img src='images/golf-course.png'>
+                        <img class='lazyload' data-src='images/golf-course.png'>
                     </a>
                 </div>
             </div>
         </div>
 
         <div class='amenities-grid'>
-            <div class='amenities-grid__column amenities-grid__column--large'>
+            <div class='amenities-grid__column amenities-grid__column--large lazyload' data-bg='images/golf.png'>
                 <div class='amenities-grid__block amenities-grid__block--large'>
                     <a class='amenities-grid__link' href='#'>
                         <span class='amenities-grid__text'>Golf</span>
@@ -215,24 +217,24 @@
                 </div>
             </div>
             <div class='amenities-grid__column'>
-                <div class='amenities-grid__block amenities-grid__block--fitness'>
+                <div class='amenities-grid__block amenities-grid__block--fitness lazyload' data-bg='images/fitness.png'>
                     <a class='amenities-grid__link' href='#'>
                         <span class='amenities-grid__text'>Fitness</span>
                     </a>
                 </div>
-                <div class='amenities-grid__block amenities-grid__block--pool'>
+                <div class='amenities-grid__block amenities-grid__block--pool lazyload' data-bg='images/pool.png'>
                     <a class='amenities-grid__link' href='#'>
                         <span class='amenities-grid__text'>Pool</span>
                     </a>
                 </div>
             </div>
             <div class='amenities-grid__column'>
-                <div class='amenities-grid__block amenities-grid__block--tennis'>
+                <div class='amenities-grid__block amenities-grid__block--tennis lazyload' data-bg='images/tennis.png'>
                     <a class='amenities-grid__link' href='#'>
                         <span class='amenities-grid__text'>Tennis</span>
                     </a>
                 </div>
-                <div class='amenities-grid__block amenities-grid__block--events'>
+                <div class='amenities-grid__block amenities-grid__block--events lazyload' data-bg='images/special_events.png'>
                     <a class='amenities-grid__link' href='#'>
                         <span class='amenities-grid__text'>Special Events & Weddings</span>
                     </a>
@@ -240,14 +242,14 @@
             </div>
         </div>
 
-        <div class='membership-block'>
+        <div class='membership-block lazyload' data-bg='images/membership_texture.png'>
             <div class='wrapper'>
                 <div class='row row--flexbox row--flexbox-center-align'>
                     <div class='row__4 center-text'>
-                        <img class='membership-block__name-image' src='images/ACC-Logo_ALT_test.png'>
+                        <img class='membership-block__name-image lazyload' data-src='images/ACC-Logo_ALT_test.png'>
                     </div>
                     <div class='row__4 center-text'>
-                        <img class='membership-block__logo' src='images/ACC-Logo_ALT_Seal_trim.png'>
+                        <img class='membership-block__logo lazyload' data-src='images/ACC-Logo_ALT_Seal_trim.png'>
                     </div>
                     <div class='row__4 center-text'>
                         <p class='membership-block__question'>Interested in Membership?</p>
@@ -257,7 +259,7 @@
             </div>
         </div>
 
-        <div class='club-news'>
+        <div class='club-news lazyload' data-bg='images/news-bg.png'>
             <div class='wrapper'>
                 <div class='club-news__heading'>
                     <h2 class='club-news__heading-text'>Club News</h2>
@@ -266,14 +268,14 @@
 
                 <div class='club-news__news-items'>
                     <div class='club-news__previous'>
-                        <img src='images/arrow_right.png'>
+                        <img class='lazyload' data-src='images/arrow_right.png'>
                     </div>
                     <div class='club-news__next'>
-                        <img src='images/arrow_right.png'>
+                        <img class='lazyload' data-src='images/arrow_right.png'>
                     </div>
 
                     <div class='news-item'>
-                        <img class='news-item__image' src='images/health_news.png'>
+                        <img class='news-item__image lazyload' data-src='images/health_news.png'>
                         <h3 class='news-item__heading'>Health News</h3>
                         <p class='news-item__blurb'>Our fitness coaches can help you develop a routine to get back in
                             shape</p>
@@ -292,7 +294,7 @@
                         </div>
                     </div>
                     <div class='news-item news-item--show-medium'>
-                        <img class='news-item__image' src='images/membership_news.png'>
+                        <img class='news-item__image lazyload' data-src='images/membership_news.png'>
                         <h3 class='news-item__heading'>Membership News</h3>
                         <p class='news-item__blurb'>Details about our membership program</p>
                         <div class='news-item__overlay'>
@@ -309,7 +311,7 @@
                         </div>
                     </div>
                     <div class='news-item news-item--show-x-large'>
-                        <img class='news-item__image' src='images/community_news.png'>
+                        <img class='news-item__image lazyload' data-src='images/community_news.png'>
                         <h3 class='news-item__heading'>Community News</h3>
                         <p class='news-item__blurb'>Welcome to our new community director, Mrs. July Belvidere!</p>
                         <div class='news-item__overlay'>
@@ -397,11 +399,11 @@
             </div>
         </div>
 
-        <footer class='footer'>
+        <footer class='footer lazyload' data-bg='images/footer-texture.png'>
             <div class='wrapper wrapper--full-width-small'>
                 <div class='footer__content'>
                     <a class='footer__member-link center-text' href='#'>Member Login</a>
-                    <img class='footer__pga-logo' src='images/pga_logo.png'>
+                    <img class='footer__pga-logo lazyload' data-src='images/pga_logo.png'>
                     <div class='footer__social-links social-links'>
                         <a href='#'><i class="fab fa-twitter"></i></a>
                         <a href='#'><i class="fab fa-facebook-f"></i></a>
@@ -409,7 +411,7 @@
                         <a href='#'><i class="fas fa-share-alt"></i></a>
                     </div>
                     <div class='contact-info footer__contact-info'>
-                        <p>Alamance County<img src='images/footer-logo.png'>North Carolina</p>
+                        <p>Alamance County<img class='lazyload' data-src='images/footer-logo.png'>North Carolina</p>
                         <p>123 Sesame Street <span class='contact-info__bullet'>&#8226;</span> Nowhere, CA 12345<span
                                 class='contact-info__bullet'>&#8226;</span> <strong>PHONE</strong> (555) 555-5555 </p>
                     </div>

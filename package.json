@@ -5,6 +5,7 @@
   "author": "Jon Pelc",
   "license": "MIT",
   "dependencies": {
+    "lazysizes": "^4.1.6",
     "webpack": "^4.29.3"
   },
   "scripts": {
